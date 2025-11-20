@@ -1,13 +1,12 @@
 $(() => {
   $('#gridContainer').dxDataGrid({
     showBorders: true,
-    dataSource: {
-      store: {
-        type: 'odata',
+    dataSource: new DevExpress.data.DataSource({
+      store: new DevExpress.data.ODataStore({
         version: 4,
         url: 'http://localhost:5005/odata/Products',
         key: 'Product_ID',
-      },
+      }),
       select: [
         'Product_ID',
         'Product_Name',
@@ -17,7 +16,7 @@ $(() => {
         'Product_Current_Inventory',
       ],
       filter: ['Product_Current_Inventory', '>', 0],
-    },
+    }),
     columns: [
       'Product_ID', {
         dataField: 'Product_Name',
