@@ -7,6 +7,7 @@ namespace ODataServer.Models
         [Key]
         public int Product_ID { get; set; }
         public string? Product_Name { get; set; }
+        public DateTime Product_Production_Start { get; set; }
         public bool Product_Available { get; set; }
         public int Product_Current_Inventory { get; set; }
         public string? Product_Cost { get; set; }
