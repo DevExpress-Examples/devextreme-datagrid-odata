@@ -12,6 +12,7 @@ const dataSource = new DataSource({
   select: [
     'Product_ID',
     'Product_Name',
+    'Product_Production_Start',
     'Product_Cost',
     'Product_Sale_Price',
     'Product_Retail_Price',
@@ -31,6 +32,11 @@ function App(): JSX.Element {
         <Column
           dataField="Product_Name"
           width={250}
+        />
+        <Column
+          dataField="Product_Production_Start"
+          caption="Production Start"
+          dataType="datetime"
         />
         <Column
           dataField="Product_Cost"
