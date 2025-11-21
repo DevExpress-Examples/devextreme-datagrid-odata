@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import 'devextreme/dist/css/dx.material.blue.light.compact.css';
-import DxDataGrid from 'devextreme-vue/data-grid';
+import DxDataGrid, { DxColumn } from 'devextreme-vue/data-grid';
 import { DataSource, ODataStore } from 'devextreme-vue/common/data';
 
 const dataSource = new DataSource({
