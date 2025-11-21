@@ -16,6 +16,7 @@ export class AppComponent {
     select: [
       'Product_ID',
       'Product_Name',
+      'Product_Production_Start',
       'Product_Cost',
       'Product_Sale_Price',
       'Product_Retail_Price',
