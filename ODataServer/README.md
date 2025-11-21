@@ -8,7 +8,7 @@ This server exposes product data through OData endpoints, enabling advanced quer
 
 ## Features
 
-- **OData v8 Protocol** - Standards-compliant REST API with full OData support
+- **OData Protocol** - Standards-compliant REST API with full OData support
 - **CORS enabled** - Allows cross-origin requests from client applications
 - **Port 5005** - Runs on HTTP port 5005 and HTTPS port 5006
 
