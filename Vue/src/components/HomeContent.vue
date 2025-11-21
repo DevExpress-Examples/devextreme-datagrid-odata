@@ -12,6 +12,7 @@ const dataSource = new DataSource({
   select: [
     'Product_ID',
     'Product_Name',
+    'Product_Production_Start',
     'Product_Cost',
     'Product_Sale_Price',
     'Product_Retail_Price',
@@ -30,6 +31,11 @@ const dataSource = new DataSource({
       <DxColumn
         :width="250"
         data-field="Product_Name"
+      />
+      <DxColumn
+        data-field="Product_Production_Start"
+        caption="Production Start"
+        data-type="datetime"
       />
       <DxColumn
         data-field="Product_Cost"
