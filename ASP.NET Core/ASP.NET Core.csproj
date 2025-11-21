@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="DevExtreme.AspNet.Core" Version="25.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="9.4.1" />
   </ItemGroup>
 
 </Project>
