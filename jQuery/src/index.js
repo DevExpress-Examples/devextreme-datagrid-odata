@@ -10,6 +10,7 @@ $(() => {
       select: [
         'Product_ID',
         'Product_Name',
+        'Product_Production_Start',
         'Product_Cost',
         'Product_Sale_Price',
         'Product_Retail_Price',
@@ -21,6 +22,10 @@ $(() => {
       'Product_ID', {
         dataField: 'Product_Name',
         width: 250,
+      }, {
+        dataField: 'Product_Production_Start',
+        caption: 'Production Start',
+        dataType: 'datetime',
       }, {
         caption: 'Cost',
         dataField: 'Product_Cost',
