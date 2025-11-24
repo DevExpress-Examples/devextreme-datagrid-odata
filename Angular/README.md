@@ -4,7 +4,7 @@ For more information about this example check the [Readme](../README.md).
 
 ## Prerequisite
 
-[ODataServer](../ODataServer) must be running on port 5005.
+[ODataServer](../ODataServer) must be active at port 5005.
 
 ## Build and Lint
 

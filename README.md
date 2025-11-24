@@ -4,15 +4,15 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# DataGrid for DevExtreme - How to bind DataGrid to an OData Service
+# DataGrid for DevExtreme - Bind DataGrid to an OData Service
 
-This example demonstrates how to bind the DevExtreme DataGrid component to an OData v4 service. It shows how to configure the ODataStore for server-side data operations including filtering, selecting specific fields, and querying product data.
+This example demonstrates how to bind the DevExtreme DataGrid component to an OData v4 service. An ODataStore is configured to run server-side data operations including filtering, selection, and search.
 
 ## Implementation Overview
 
 ### OData Server Setup
 
-This example includes a pre-configured ASP.NET Core OData server (see [ODataServer](/ODataServer/)) that exposes product data through a standardized REST API. The server runs on `http://localhost:5005` and provides the `/odata/Products` endpoint.
+This example includes a pre-configured ASP.NET Core OData server (see [ODataServer](/ODataServer/)) that uses an OData REST API to expose sample data. The server runs at `http://localhost:5005` and creates the following endpoint: `/odata/Products`.
 
 ### DataGrid Configuration
 
@@ -24,34 +24,36 @@ All framework implementations follow the same pattern:
 
 ## Running the Example
 
-**For Angular, React, Vue, and jQuery:**
+### Angular, React, Vue, and jQuery
 
-1. **Start the OData Server:**
-   ```bash
-   cd ODataServer
-   dotnet run
-   ```
-   The server will be available at `http://localhost:5005`.
+1. **Start the OData Server**
+    Run the following command to start the OData server:
+
+    ```bash
+    cd ODataServer
+    dotnet run
+    ```
+
+    The server starts at the following URL: `http://localhost:5005`.
 
 2. **Run the Client Application:**
+    Run one of the following commands to start the client application:
    
-   Choose your preferred framework and follow its setup:
-   
-   - **Angular:** `cd Angular && npm install && npm start`
-   - **React:** `cd React && npm install && npm run dev`
-   - **Vue:** `cd Vue && npm install && npm run dev`
-   - **jQuery:** `cd jQuery && npm install && npm start`
+    - **Angular:** `cd Angular && npm install && npm start`
+    - **React:** `cd React && npm install && npm run dev`
+    - **Vue:** `cd Vue && npm install && npm run dev`
+    - **jQuery:** `cd jQuery && npm install && npm start`
 
-**For ASP.NET Core:**
+### ASP.NET Core
 
-The ASP.NET Core example includes its own OData server, so you only need to run:
+The ASP.NET Core example includes a standalone OData server. Run the following command to start the client application and server:
 
 ```bash
 cd "ASP.NET Core"
 dotnet run
 ```
 
-The application will be available at `http://localhost:59183` .
+The application starts at the following URL: `http://localhost:59183` .
 
 ## Files to Review
 

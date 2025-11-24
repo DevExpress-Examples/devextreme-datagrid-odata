@@ -1,23 +1,22 @@
 # ODataServer
 
-An [ASP.NET Core OData 8](https://learn.microsoft.com/en-us/odata/webapi-8/overview) project that provides OData endpoints for querying data.
+An [ASP.NET Core OData 8](https://learn.microsoft.com/en-us/odata/webapi-8/overview) project that creates OData endpoints.
 
 ## Overview
 
-This server exposes product data through OData endpoints, enabling advanced querying capabilities such as filtering, sorting, selecting specific fields, and more through standardized OData query options.
+This server creates OData endpoints to expose sample data. You can use standardized OData queries to access data and run filtering, sorting, and selection operations.
 
 ## Features
 
-- **OData Protocol** - Standards-compliant REST API with full OData support
+- **OData Protocol** - OData-compliant REST API
 - **CORS enabled** - Allows cross-origin requests from client applications
-- **Port 5005** - Runs on HTTP port 5005 and HTTPS port 5006
 
 ## Project Structure
 
 ```
 ODataServer/
 ├── Controllers/
-│   └── ProductsController.cs    # OData controller for Products entity
+│   └── ProductsController.cs    # OData controller for the Products entity
 ├── Models/
 │   ├── Product.cs               # Product entity model
 │   └── SampleData.cs            # Sample product data
@@ -28,19 +27,19 @@ ODataServer/
 
 ## Configuration
 
-The OData service is configured in `Program.cs` with the following features:
+`Program.cs` configures the OData service and implements the following features:
 
 - **Entity Sets**: Products
 - **Query Options**: `$select`, `$filter`, `$orderby`, `$expand`, `$count`, `$top`
-- **CORS**: Configured to allow requests from `http://localhost:5050`
+- **CORS**: Allows requests from `http://localhost:5050`
 
-## Running the Server
+## Run the Server
 
 ```bash
 dotnet run
 ```
 
-The server will start on:
+The server starts at the following URLs:
 - HTTP: http://localhost:5005
 - HTTPS: https://localhost:5006
 
@@ -50,4 +49,4 @@ Access the OData service at:
 
 ## CORS Policy
 
-The server allows requests from `http://localhost:5050` with all methods and headers. This is configured for development purposes. For production, update the CORS policy in `Program.cs` to restrict allowed origins as needed.
+The server allows all requests from `http://localhost:5050` (all methods and headers). This configuration is for development purposes. In production, update the CORS policy in `Program.cs` to restrict allowed origins as needed.
