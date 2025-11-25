@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# DataGrid for DevExtreme - Bind DataGrid to an OData Service
+# DevExtreme DataGrid - Bind to an OData Service
 
 This example demonstrates how to bind the DevExtreme DataGrid component to an OData v4 service. An ODataStore is configured to run server-side data operations including filtering, selection, and sorting.
 
