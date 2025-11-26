@@ -49,4 +49,4 @@ Access the OData service at:
 
 ## CORS Policy
 
-The server allows all requests from `http://localhost:5050` (all methods and headers). This configuration is for development purposes. In production, update the CORS policy in `Program.cs` to restrict allowed origins as needed.
+The server allows all requests from `http://localhost:5050` (all methods and headers). Use this configuration for development purposes only. In production, update the CORS policy in `Program.cs` to restrict allowed origins as needed.

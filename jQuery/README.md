@@ -1,32 +1,32 @@
 # jQuery DevExtreme Example
 
-For more information about this example check the [Readme](../README.md).
+Review the following file for the implementation overview: [Readme](../README.md).
 
-## Prerequisite
+## Start the Server
 
-[ODataServer](../ODataServer) must be active at port 5005.
+Start the [ODataServer](../ODataServer) before you run the application. This example is configured to access the ODataServer at port 5005. To change this configuration, update the following line: [index.js#L7](/jQuery/src/index.js#L7)
 
 ## Build and Lint
 
-Install dependencies:
-```sh
-npm install
-```
+- Install dependencies:
+    ```sh
+    npm install
+    ```
 
-Start dev server:
-```sh
-npm start
-```
-App URL: http://localhost:5050/src/index.html
+- Start the dev server:
+    ```sh
+    npm start
+    ```
+    The dev server runs at the following URL: http://localhost:5050/src/index.html
 
-Run linter:
-```sh
-npm run lint
-```
+- Run linter:
+    ```sh
+    npm run lint
+    ```
 
-## Further help
+## Helpful Resources
 
 jQuery docs: https://api.jquery.com/
 DevExtreme docs: https://js.devexpress.com/jQuery/Documentation
 
-To get more help with DevExtreme, submit a ticket through the [Support Center](https://supportcenter.devexpress.com/ticket/create).
+If you still have questions, please contact us via the DevExpress [Support Center](https://supportcenter.devexpress.com/ticket/create).

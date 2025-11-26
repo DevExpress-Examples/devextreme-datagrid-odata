@@ -5,38 +5,38 @@
 <!-- default badges end -->
 # DevExtreme DataGrid - Bind to an OData Service
 
-This example demonstrates how to bind the DevExtreme DataGrid component to an OData v4 service. An ODataStore is configured to run server-side data operations including filtering, selection, and sorting.
+This example binds the DevExtreme DataGrid component to an OData v4 service. An ODataStore is configured to run server-side data operations including filtering, selection, and sorting.
 
-## Implementation Overview
+## Implementation Steps
 
-### OData Server Setup
+### Setup the OData Server
 
 This example includes a pre-configured ASP.NET Core OData server (see [ODataServer](/ODataServer/)) that uses an OData REST API to expose sample data. The server runs at `http://localhost:5005` and creates the following endpoint: `/odata/Products`.
 
-### DataGrid Configuration
+### Configure the DataGrid
 
-All framework implementations follow the same pattern:
+All framework projects share the same implementation idea:
 
-1. Create an [ODataStore](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/). Use its properties to specify the service's [url](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#url), [key](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key) data field, and OData [version](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#version).
-2. You can configure **ODataStore** as a standalone element (see [OData](https://js.devexpress.com/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/) for details), but this examples uses a [DataSource](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/) to demonstrate data [filtering](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter) and data fields [selection](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select).
+1. Create an [ODataStore](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/). Specify the service [url](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#url), [key](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key) data field, and OData [version](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#version).
+2. You can configure an **ODataStore** as a standalone variable (see [OData](https://js.devexpress.com/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/) for details), but this examples uses a [DataSource](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/) to demonstrate data [filtering](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter) and data field [selection](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select).
 3. [Bind the DataGrid](https://js.devexpress.com/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/#Bind_the_DataGrid_to_Data) to the data source.
 
-## Running the Example
+## Run the Example
 
 ### Angular, React, Vue, and jQuery
 
 1. **Start the OData Server**
-    Run the following command to start the OData server:
+    Execute the following command to start the OData server:
 
     ```bash
     cd ODataServer
     dotnet run
     ```
 
-    The server starts at the following URL: `http://localhost:5005`.
+    The server is available at the following URL: `http://localhost:5005`.
 
 2. **Run the Client Application:**
-    Run one of the following commands to start the client application:
+    Execute one of the following commands to run the client application:
    
     - **Angular:** `cd Angular && npm install && npm start`
     - **React:** `cd React && npm install && npm run dev`
@@ -52,7 +52,7 @@ cd "ASP.NET Core"
 dotnet run
 ```
 
-The application starts at the following URL: `http://localhost:59183` .
+The application is available at the following URL: `http://localhost:59183` .
 
 ## Files to Review
 
