@@ -1,10 +1,6 @@
 # ODataServer
 
-An [ASP.NET Core OData 8](https://learn.microsoft.com/en-us/odata/webapi-8/overview) project that creates OData endpoints.
-
-## Overview
-
-This server creates OData endpoints to expose sample data. You can use standardized OData queries to access data and run filtering, selection, and sorting  operations.
+This [ASP.NET Core OData 8](https://learn.microsoft.com/en-us/odata/webapi-8/overview) application creates OData endpoints to expose sample data. You can use standardized OData queries to access and filter, select, and sort data.
 
 ## Features
 
