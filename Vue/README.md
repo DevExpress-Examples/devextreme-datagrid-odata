@@ -1,37 +1,38 @@
 # Vue 3 + TypeScript + Vite + DevExtreme
 
-For more information about this example check the [Readme](../README.md).
+Review the following file for the implementation overview: [Readme](../README.md).
 
-## Prerequisite
+## Start the Server
 
-[ODataServer](../ODataServer) must be running on port 5005.
+Start the [ODataServer](../ODataServer) before you run the application. This example is configured to access the ODataServer at port 5005. To change this configuration, update the following line: [HomeContent.vue#L9](/Vue/src/components/HomeContent.vue#L9)
 
 ## Build and Lint
 
-Install dependencies:
-```sh
-npm install
-```
+- Install dependencies:
+    ```sh
+    npm install
+    ```
 
-Build the production bundle:
-```sh
-npm run build
-```
+- Build a production bundle:
+    ```sh
+    npm run build
+    ```
 
-Run the linter:
-```sh
-npm run lint
-```
+- Run linter:
+    ```sh
+    npm run lint
+    ```
 
-Dev server to preview locally:
-```sh
-npm run dev
-```
+- Start the dev server:
+    ```sh
+    npm run dev
+    ```
+    The dev server runs at the following URL: http://localhost:5173/
 
-## Further help
+## Helpful Resources
 
 You can learn more about Vue in the [Vue documentation](https://vuejs.org/guide/introduction.html).
 You can learn more about Vite in the [Vite documentation](https://vite.dev/).
 You can learn more about DevExtreme Vue components in the [DevExtreme Vue documentation](https://js.devexpress.com/Vue/).
 
-To get more help with DevExtreme, submit a ticket through the [Support Center](https://supportcenter.devexpress.com/ticket/create).
+If you still have questions, please contact us via the DevExpress [Support Center](https://supportcenter.devexpress.com/ticket/create).
