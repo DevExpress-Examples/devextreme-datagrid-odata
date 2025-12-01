@@ -5,17 +5,17 @@
 <!-- default badges end -->
 # DevExtreme DataGrid - Bind to an OData Service
 
-This example binds the DevExtreme DataGrid component to an OData v4 service. An ODataStore is configured to run server-side data operations including filtering, selection, and sorting.
+This example binds the DevExtreme DataGrid component to an OData v4 service. The ODataStore is configured to run server-side data operations including filtering, record selection, and sorting.
 
 ## Implementation Details
 
 ### Setup the OData Server
 
-This example includes a pre-configured ASP.NET Core OData server (see [ODataServer](/ODataServer/)) that uses an OData REST API to expose sample data. The server runs at `http://localhost:5005` and creates the following endpoint: `/odata/Products`.
+This example includes a pre-configured ASP.NET Core OData server (see [ODataServer](/ODataServer/)) that uses OData REST APIs to expose sample data. The server runs at `http://localhost:5005` and creates the following endpoint: `/odata/Products`.
 
 ### Configure the DataGrid
 
-All framework projects share the same implementation idea:
+All framework projects share the same implementation:
 
 1. Create an [ODataStore](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/). Specify the service [url](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#url), [key](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key) data field, and OData [version](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#version).
 2. You can configure a standalone **ODataStore** service (see [OData](https://js.devexpress.com/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/) for details), but this examples uses a [DataSource](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/) to implement data [filtering](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter) and [selection](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select) operations.
@@ -35,7 +35,7 @@ All framework projects share the same implementation idea:
 
     The server is available at the following URL: `http://localhost:5005`.
 
-2. **Run the Client Application:**
+2. **Run the Client Application**
     Execute one of the following commands to run the client application:
    
     - **Angular:** `cd Angular && npm install && npm start`
@@ -45,7 +45,7 @@ All framework projects share the same implementation idea:
 
 ### ASP.NET Core
 
-The ASP.NET Core example includes a standalone OData server. Run the following command to start the client application and server:
+Our ASP.NET Core example includes a standalone OData server. Run the following command to start the client application and server:
 
 ```bash
 cd "ASP.NET Core"
