@@ -91,7 +91,7 @@ The application is available at the following URL: `http://localhost:59183` .
 
 - [ODataContext for DevExtreme - How to filter data by a foreign key value](https://github.com/DevExpress-Examples/devextreme-odatacontext-filter-data-by-foreign-key-value)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-datagrid-odata&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-datagrid-odata&~~~was_helpful=no)
 
