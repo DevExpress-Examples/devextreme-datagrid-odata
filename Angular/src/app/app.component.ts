@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { DataSource, ODataStore } from 'devextreme-angular/common/data';
+import { DxDataGridModule } from 'devextreme-angular/ui/data-grid';
 
 @Component({
+  imports: [DxDataGridModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
