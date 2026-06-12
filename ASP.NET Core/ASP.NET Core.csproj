@@ -45,7 +45,7 @@
   </Target>
 
   <ItemGroup>
-    <PackageReference Include="DevExtreme.AspNet.Core" Version="25.1.*" />
+    <PackageReference Include="DevExtreme.AspNet.Core" Version="26.1.2-beta" />
     <PackageReference Include="Microsoft.AspNetCore.OData" Version="9.4.1" />
   </ItemGroup>
 
